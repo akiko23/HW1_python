@@ -4,7 +4,9 @@ edinitsi = ''
 desatki, sotni = '', ''
 
 
+# огромное число накопипасченных условий, СЛОВАРЯМИ И ДРУГИМИ СРЕДСТВАМИ ПИТОНА, КОТОРЫЕ Я ЗНАЮ ВЕДЬ ПОЛЬЗОВАТЬСЯ НЕЛЬЗЯ
 if int(num) > 9:
+    # формирование десятков
     if int(num[0]) == 4:
         desatki = "XL"
     elif 9 > int(num[0]) >= 5:
@@ -15,6 +17,8 @@ if int(num) > 9:
         desatki = "M"
     else:
         desatki = "X" * int(num[0])
+
+# формирование единиц
 if num[-1] == "4":
     edinitsi = "IV"
 elif num[-1] == "5":
